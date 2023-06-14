@@ -1,0 +1,7 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___=require("../../../../../node_modules/css-loader/dist/runtime/api.js");
+exports=___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".twbs .select-input {\n  width: 100%;\n}\n\n.twbs .select-input .select-input-container {\n  position: relative; /* constrain the height of the arrow button to us */\n}\n\n.twbs .select-input button.controller {\n  background-color: transparent;\n  border: none;\n  position: absolute;\n  right: 0;\n  top: 0;\n  cursor: pointer;\n  width: 40px;\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  justify-content: center;\n  align-items: center;\n}\n\n.twbs .select-input.show-select input.form-control {\n  padding-right: 30px; /* make room for the X or dropdown icon */\n}\n\n.twbs .select-input button.controller:hover svg {\n  stroke: #fe793d;\n}\n\n/** Remove bottom rounded corners when suggestions show */\n.twbs .select-input.open input.form-control {\n  border-bottom-left-radius: 0;\n  border-bottom-right-radius: 0;\n}\n", ""]);
+// Exports
+module.exports=exports;
