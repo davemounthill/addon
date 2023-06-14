@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <!-- Use a templated HTML printing scriptlet to import common stylesheet -->
+    <?!= HtmlService.createHtmlOutputFromFile('Stylesheet').getContent(); ?>
+  </head>
+  <body>
+    <!-- Below is the HTML code that defines the sidebar element structure. -->
+    <div class="sidebar">
+      <!-- File Import Section -->
+      <div class="block">
+        <label for="file-import">Upload CSV:</label>
+        <input id="file-import" type="file">
+        <p id="file-info"></p>
+        <p id="file-size"></p>
+        <p id="upload-time"></p>
+      </div>
+
+      <!-- Mapping Section -->
+      <div class="block">
+        <h3>Mapping Section</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>CSV Column</th>
+              <th>Google Sheet Column</th>
+              <th>Transformation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows for column mappings will be added here dynamically -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Preview Section -->
+      <div class="block">
+        <h3>Preview</h3>
+        <table id="preview-table">
+          <!-- Preview table will be added here dynamically -->
+        </table>
+      </div>
+
+      <!-- Save and Clear Buttons -->
+      <div class="block">
+        <button id="save-button">Save Mapping</button>
+        <button id="clear-button">Clear Mapping</button>
+      </div>
+    </div>
+
+    <!-- Use a templated HTML printing scriptlet to import JavaScript. -->
+    <?!= HtmlService.createHtmlOutputFromFile('SidebarJavaScript').getContent(); ?>
+  </body>
+</html>
