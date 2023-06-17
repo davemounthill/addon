@@ -1,0 +1,14 @@
+<script>
+  document.getElementById('myForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var columnSelection = document.getElementById('columnSelection').value;
+    var dataTransformation = document.getElementById('dataTransformation').value;
+    google.script.run.withSuccessHandler(function(response) {
+      if (response.success) {
+        alert(response.message);
+      } else {
+        alert('Error: ' + response.message);
+      }
+    }).processFormData(columnSelection, dataTransformation);
+  });
+</script>
