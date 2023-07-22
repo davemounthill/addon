@@ -1,0 +1,75 @@
+{
+    "isCompact": false,
+    "boxShadow": "none",
+    "mobileBottomRow": 5,
+    "widgetName": "btn_markComplete",
+    "dynamicPropertyPathList": [
+        {"key": "isDisabled"},
+        {"key": "menuItems.menuItem2.onClick"},
+        {"key": "menuItems.menuItem1.onClick"}
+    ],
+    "displayName": "Menu Button",
+    "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
+    "topRow": 1,
+    "bottomRow": 5,
+    "parentRowSpace": 10,
+    "type": "MENU_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 62,
+    "animateLoading": true,
+    "parentColumnSpace": 8.329296874999999,
+    "dynamicTriggerPathList": [
+        {"key": "menuItems.menuItem2.onClick"},
+        {"key": "menuItems.menuItem1.onClick"}
+    ],
+    "leftColumn": 52,
+    "dynamicBindingPathList": [
+        {"key": "menuColor"},
+        {"key": "borderRadius"},
+        {"key": "isDisabled"}
+    ],
+    "isDisabled": "{{utils.activeModuleContent.activeModuleContent.markComplete === 'Approve'}}",
+    "key": "f3s2pgu1tc",
+    "isDeprecated": false,
+    "rightColumn": 62,
+    "menuVariant": "PRIMARY",
+    "widgetId": "x54jgy2n0g",
+    "menuItems": {
+        "menuItem1": {
+            "onClick": "{{utils.setMarkComplete('Approved');\nutils.acceptRejectModuleContent();\n}}",
+            "iconName": "tick",
+            "widgetId": "",
+            "iconColor": "rgb(3, 179, 101)",
+            "index": 0,
+            "label": "Approve",
+            "id": "menuItem1",
+            "isVisible": true,
+            "isDisabled": false,
+            "textColor": "rgb(3, 179, 101)"
+        },
+        "menuItem2": {
+            "onClick": "{{utils.setMarkComplete('Rejected')}}",
+            "iconName": "cross",
+            "widgetId": "",
+            "iconColor": "#dc2626",
+            "index": 1,
+            "label": "Reject",
+            "id": "menuItem2",
+            "isVisible": true,
+            "isDisabled": false,
+            "textColor": "#dc2626"
+        }
+    },
+    "isVisible": true,
+    "label": "Mark Complete",
+    "version": 1,
+    "parentId": "uh8kttqf4g",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 1,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 46,
+    "menuItemsSource": "STATIC",
+    "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+    "placement": "CENTER"
+}

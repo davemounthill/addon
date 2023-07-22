@@ -1,0 +1,94 @@
+{
+    "isCompact": false,
+    "boxShadow": "none",
+    "mobileBottomRow": 7,
+    "widgetName": "frm_newVideo",
+    "configureMenuItems": {
+        "label": "Configure menu items",
+        "id": "config",
+        "config": {
+            "id": "config",
+            "label": "Menu Item",
+            "isVisible": true,
+            "isDisabled": false
+        }
+    },
+    "dynamicPropertyPathList": [
+        {"key": "menuItems.menuItemr36sty56y3.onClick"},
+        {"key": "menuItems.menuIteme2w7r408c7.onClick"},
+        {"key": "menuItems.menuItem3.onClick"},
+        {"key": "menuItems.menuItem2.onClick"}
+    ],
+    "displayName": "Menu Button",
+    "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
+    "topRow": 13,
+    "bottomRow": 17,
+    "parentRowSpace": 10,
+    "type": "MENU_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 54,
+    "animateLoading": true,
+    "parentColumnSpace": 18.21875,
+    "dynamicTriggerPathList": [
+        {"key": "menuItems.menuItem2.onClick"},
+        {"key": "menuItems.menuItem3.onClick"},
+        {"key": "menuItems.menuIteme2w7r408c7.onClick"}
+    ],
+    "leftColumn": 51,
+    "dynamicBindingPathList": [
+        {"key": "menuColor"},
+        {"key": "borderRadius"}
+    ],
+    "isDisabled": false,
+    "sourceData": [],
+    "key": "9tkorsf6z6",
+    "isDeprecated": false,
+    "rightColumn": 62,
+    "iconName": "plus",
+    "menuVariant": "PRIMARY",
+    "widgetId": "vnn0ex7c7f",
+    "menuItems": {
+        "menuItem3": {
+            "onClick": "{{utils.setNewQuestionType('Quiz');\nshowModal('mdl_createContent');}}",
+            "widgetId": "",
+            "index": 2,
+            "label": "Quiz",
+            "id": "menuItem3",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItem2": {
+            "onClick": "{{utils.setNewQuestionType('Video');\nshowModal('mdl_createContent');}}",
+            "widgetId": "",
+            "index": 1,
+            "label": "Video",
+            "id": "menuItem2",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuIteme2w7r408c7": {
+            "onClick": "{{utils.setNewQuestionType('Reading Material');\nshowModal('mdl_createContent');}}",
+            "widgetId": "h2hi4iyx0z",
+            "index": 0,
+            "id": "menuIteme2w7r408c7",
+            "label": "Reading Material",
+            "isDisabled": false,
+            "isVisible": true
+        }
+    },
+    "isVisible": true,
+    "label": "Upload Content",
+    "version": 1,
+    "parentId": "0",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 3,
+    "originalTopRow": 10,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 38,
+    "menuItemsSource": "STATIC",
+    "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+    "originalBottomRow": 14,
+    "iconAlign": "left",
+    "placement": "CENTER"
+}

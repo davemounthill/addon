@@ -1,0 +1,50 @@
+{
+    "boxShadow": "none",
+    "mobileBottomRow": 14,
+    "widgetName": "icn_addQuizQuestion",
+    "onClick": "{{utils.setAddQuestion(!utils.addQuestion);\nutils.showNewQuestion && utils.setShowNewQuestion(false);\nresetWidget('lst_updateQuiz')\n}}",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "dynamicPropertyPathList": [
+        {"key": "onClick"},
+        {"key": "iconName"}
+    ],
+    "displayName": "Icon Button",
+    "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 12,
+    "bottomRow": 16,
+    "tooltip": "Add Question",
+    "parentRowSpace": 10,
+    "type": "ICON_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 32,
+    "animateLoading": true,
+    "parentColumnSpace": 16.16092529296875,
+    "dynamicTriggerPathList": [{"key": "onClick"}],
+    "leftColumn": 29,
+    "dynamicBindingPathList": [
+        {"key": "buttonColor"},
+        {"key": "borderRadius"},
+        {"key": "iconName"}
+    ],
+    "isDisabled": false,
+    "key": "hfx6gntj2i",
+    "isDeprecated": false,
+    "rightColumn": 32,
+    "iconName": "{{utils.addQuestion ? 'minus' : 'plus'}}",
+    "widgetId": "evuom09kqk",
+    "minWidth": 50,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "2dz0aqid6j",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 10,
+    "responsiveBehavior": "hug",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 28,
+    "buttonVariant": "SECONDARY"
+}

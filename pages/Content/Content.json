@@ -1,0 +1,92 @@
+{
+  "unpublishedPage": {
+    "name": "Content",
+    "slug": "content",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1390,
+          "containerStyle": "none",
+          "snapRows": 88,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 900,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Content_fetchCourseBySubject",
+              "name": "fetchCourseBySubject",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_subject.selectedOptionValue || 1"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Content_fetchSubjects",
+              "name": "fetchSubjects",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Content_fetchModuleContent",
+              "name": "fetchModuleContent",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_course.selectedOptionValue || undefined",
+                "sel_contentType.selectedOptionValue || undefined",
+                "sel_subject.selectedOptionValue || 1",
+                "sel_module.selectedOptionValue || undefined"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Content_fetchModules",
+              "name": "fetchModules",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_course.selectedOptionValue || undefined",
+                "sel_subject.selectedOptionValue || 1"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Content",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64bc39eec28f18420ba0db30_64bc3b06c28f18420ba0db42"
+}

@@ -1,0 +1,91 @@
+{
+  "unpublishedPage": {
+    "name": "Modules",
+    "slug": "modules",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1310,
+          "containerStyle": "none",
+          "snapRows": 88,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 900,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Modules_utils.getModules",
+              "name": "utils.getModules",
+              "collectionId": "Modules_utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const modules = await fetchModules.run();\n  return modules.map(m => {\n    return {\n      Id: m.id,\n      Name: m.name,\n      Duration: m.duration,\n      Description: m.description,\n      CourseId: m.course_id,\n      SubjectId: m.course_subject_id\n    };\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Modules_fetchSubjects",
+              "name": "fetchSubjects",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Modules_fetchCourseBySubject",
+              "name": "fetchCourseBySubject",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_subject.selectedOptionValue || 1"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Modules_fetchModuleContent",
+              "name": "fetchModuleContent",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_course.selectedOptionValue || undefined",
+                "sel_subject.selectedOptionValue || 1",
+                "tbl_modules.selectedRow.Id || tbl_modules.triggeredRow.Id || undefined"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Modules",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64bc39eec28f18420ba0db30_64bc3b06c28f18420ba0db40"
+}
