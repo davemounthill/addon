@@ -1,7 +1,0 @@
-// Imports
-var ___CSS_LOADER_API_IMPORT___=require("../../../../node_modules/css-loader/dist/runtime/api.js");
-exports=___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, ".twbs .vertical-scroll {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n}\n\n.twbs .vertical-scroll section {\n  flex: 1 1 auto;\n  overflow-y: auto;\n}\n", ""]);
-// Exports
-module.exports=exports;

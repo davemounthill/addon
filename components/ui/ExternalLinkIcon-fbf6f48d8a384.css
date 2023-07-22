@@ -1,7 +1,0 @@
-// Imports
-var ___CSS_LOADER_API_IMPORT___=require("../../../../node_modules/css-loader/dist/runtime/api.js");
-exports=___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, ".external-link-icon {\n  padding-left: 0.1em;\n  padding-right: 0.35em;\n  display: block;\n}\n\n.external-link-icon svg path {\n  fill: #999;\n}\n\n.external-link-icon:hover svg path {\n  fill: #fe793d;\n}\n", ""]);
-// Exports
-module.exports=exports;

@@ -1,7 +1,0 @@
-// Imports
-var ___CSS_LOADER_API_IMPORT___=require("../../../../node_modules/css-loader/dist/runtime/api.js");
-exports=___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, ".twbs .preview-footer {\n  margin-top: 0.5em;\n}\n\n.twbs .preview-footer-actions {\n  float: right;\n}\n\n.twbs .preview-pane .preview-footer-actions button.btn {\n  font-size: 14px;\n}\n\n.twbs .preview-footer-actions .action-cancel {\n  margin-right: 0.5em;\n}\n", ""]);
-// Exports
-module.exports=exports;

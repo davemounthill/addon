@@ -1,7 +1,0 @@
-// Imports
-var ___CSS_LOADER_API_IMPORT___=require("../../../../node_modules/css-loader/dist/runtime/api.js");
-exports=___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, ".twbs table.cellref-preview td {\n  font-size: 11px;\n  padding: 0.25rem 0.5rem;\n}\n\n.twbs .preview-nav .custom-switch input {\n  cursor: pointer;\n}\n\n.twbs .preview-nav .custom-switch label {\n  cursor: pointer;\n  font-size: 11px;\n  padding-top: 3px;\n  color: #666;\n}\n", ""]);
-// Exports
-module.exports=exports;
